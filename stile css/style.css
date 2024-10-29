@@ -1,0 +1,83 @@
+.imgheader {
+    height: 60vh;
+    width:1000vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.divcards {
+    height: 420px;
+}
+
+.card {
+    height: 100px;
+    object-fit: cover;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.card-img-top {
+    height: 200px;
+    margin: 1px;
+}
+
+
+.primoarticolo {
+    border: 1px solid black;
+    height: 390px;
+}
+
+.secondoarticolo {
+    height: 480px;
+    border: 1px solid black;
+}
+
+.img1 {
+    position: relative;
+    top: -50px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+button {
+    border: 1px solid black;           /* Bordo del pulsante */
+    border-radius: 10px;               /* Angoli arrotondati */
+    background-color: #4CAF50;         /* Colore di sfondo */
+    color: white;                       /* Colore del testo */
+    padding: 10px 20px;                /* Padding interno */
+    font-size: 16px;                    /* Dimensione del testo */
+    cursor: pointer;                    /* Cursore pointer al passaggio del mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Effetto di transizione */
+}
+
+button:hover {
+    background-color: #45a049;          /* Colore di sfondo al passaggio del mouse */
+    transform: scale(1.05);             /* Leggero ingrandimento */
+}
+
+button:active {
+    background-color: #3e8e41;          /* Colore di sfondo quando il pulsante è premuto */
+    transform: scale(0.95);             /* Riduzione della dimensione quando è attivo */
+}
+
+button::after {
+    content: '';                        /* Aggiunge un elemento dopo il pulsante */
+    display: block;                    /* Mostra l'elemento come blocco */
+    height: 5px;                       /* Altezza dell'elemento */
+    width: 100%;                       /* Larghezza dell'elemento */
+    background-color: rgba(255, 255, 255, 0.2); /* Sfondo trasparente */
+    border-radius: 10px;               /* Angoli arrotondati */
+    position: relative;                /* Posizione relativa per posizionare correttamente l'elemento */
+    top: -5px;                         /* Sposta l'elemento verso l'alto */
+    opacity: 0;                       /* Inizialmente invisibile */
+    transition: opacity 0.3s;          /* Effetto di transizione per l'opacità */
+}
+
+button:hover::after {
+    opacity: 1;                        /* Rende visibile l'elemento al passaggio del mouse */
+}
